@@ -1,5 +1,5 @@
 ---
-title: Why Blog
+title: My Blog
 layout: post
 ---
 
