@@ -17,7 +17,7 @@ recent_num: 20
 twitter: wandersky
 weibo: TripCS
 github: skyroam
-linkedin: janke
+linkedin: Yixuan Wang
 
 # avatar and Favicon
 avatar: http://img.qq745.com/uploads/allimg/140902/1-140Z2222132.jpg
@@ -30,7 +30,7 @@ disqus:
 # google analytics config
 ga:
   id: UA-54767140-1
-  url: yansu.org
+  url: skyroam.github.io
 
 # Build settings
 permalink: /:year/:month/:day/:title.html
