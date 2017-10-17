@@ -1,6 +1,6 @@
 ### 我的博客
 
-地址：[http://skyroam.github.io](http://skyroam.github.io)
+地址：[http:/wyx.life](http://wyx.life)
 
 ### 安装说明
 
