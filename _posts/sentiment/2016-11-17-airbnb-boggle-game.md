@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Airbnb Boggle Game
-category: 面试
+category: 随笔
 tags: Airbnb,Interview
 keywords: Airbnb,Interview,Boogle Game
 ---
