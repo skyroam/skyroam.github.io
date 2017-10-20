@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 在线 MOOC 资源汇总
+title: MOOC 资源汇总
 category: 资源
 tags: Mooc
 keywords: Mooc, Online learning
