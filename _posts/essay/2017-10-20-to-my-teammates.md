@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 打油诗共勉
+title: 共勉
 category: 随笔
 tags: Poem
 keywords: Poem,Teammate
