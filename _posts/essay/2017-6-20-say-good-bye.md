@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 再见
-catogery: 随笔
+category: 随笔
 tags: Poem
 keywords: Poem,Graduate
 ---

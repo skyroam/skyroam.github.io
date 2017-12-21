@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 凑个热闹
-catogery: 随笔
+category: 随笔
 tags: Poem
 keywords: Poem, Affection
 ---
