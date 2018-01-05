@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 一点情绪
+title: 逆反心理
 category: 随笔
 tags: School
 keywords: Poem,School
