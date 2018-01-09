@@ -14,13 +14,13 @@ discription:
 推荐先自己安装对应的显卡，因为 NVIDIA 有专门用于 Notebook 的显卡，安装该显卡后一般在控制面板有三个新程序。当然也可以不安装 exprience 那个软件。
 2. 在Windows上同时安装 Python2 和 Python3.  
 在这里我们通过 Anaconda 来安装 python, 下载 Anaconda2 并将其作为主环境。按照安装顺序，如果需要的话改变一下默认目录，并勾选两个选项。安装好之后打开CMD， 执行下面的命令创建一个 Python3 虚拟环境。   
-`
+```
 conda create -n py3 python=3.5 anaconda
-`  
+```
 当然如果你有强迫症的话可以再创建一个对称的 py2  
-`
+```
 conda create -n py2 python=2.7 anaconda
-`  
+```  
 这里就用原来的了。
 装好后可以测试一下，重新打开一个 CMD 窗口。 
 ```
@@ -33,9 +33,9 @@ deactivate py3
 3. 安装 CUDA8.0 和 cudnn6.0  
 到官网上下载最新版的 CUDA8.0 和 cudnn6.0。然后直接运行 CUDA 安装文件，可以自定义一下需要安装的组件，如果之前已经安装过显卡了，则不需要再安装了。目录什么的无所谓，因为它只是临时目录，最后还是安装到了 C 盘。  
 然后要测试一下 CUDA8.0 是不是安装正确。打开一个 CMD 窗口。输入  
-`
+```
 nvcc -V  
-`  
-![](http://ww1.sinaimg.cn/large/006CYpBYgy1fnaa7m5oj1j30ci06umx5.jpg)  
+```
+![](http://ww1.sinaimg.cn/large/006CYpBYgy1fnabb4hawuj30b505m747.jpg)  
 会显示安装好了 CUDA8.0。然而这样还未成功，还要测试一下 CUDA samples 才行。
 
