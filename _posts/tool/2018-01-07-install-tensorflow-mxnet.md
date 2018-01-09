@@ -6,9 +6,9 @@ tags: 深度学习
 keywords: MXNet, Tensorflow
 discription:
 ---
-在Windows上安装深度学习框架确实废了我不小的功夫，所以在这里记录下来以便以后查看。
+在Windows上安装深度学习框架并进行 GPU 加速确实废了我不小的功夫，所以在这里记录下来以便以后查看。
 
-我主要关注的深度学习框架是Tensorflow, Pytorch, MNNet这三个。其中 Pytorch 在 Windows 上装不了，而对于 Tensorflow, Windows 对 Python3.5 比较支持，而 MXNet却只支持 Python2， 确实很烦，要同时兼容 Python2 和 Python3 才行。而且更新的Tensorflow不在支持 cudnn5.1， 所以这里注意要下载 cudnn6.0。  
+我主要关注的深度学习框架是 Tensorflow, Pytorch, MNNet这三个。其中 Pytorch 在 Windows 上装不了，而对于 Tensorflow, Windows 上对 Python3.5 比较支持，而 MXNet 在 Windows 上只支持 Python2， 确实很烦，要同时兼容 Python2 和 Python3 才行。而且更新的 Tensorflow 不在支持 cudnn5.1， 所以这里注意要下载 cudnn6.0。  
 
 1. 首先装好对应的显卡驱动和 VS2015 community 版。   
 推荐先自己安装对应的显卡，因为 NVIDIA 有专门用于 Notebook 的显卡，安装该显卡后一般在控制面板有三个新程序。当然也可以不安装 exprience 那个软件。
