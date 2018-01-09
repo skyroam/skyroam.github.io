@@ -35,10 +35,13 @@ discription:
 
 3. 安装 CUDA8.0 和 cudnn6.0  
 到官网上下载最新版的 CUDA8.0 和 cudnn6.0。然后直接运行 CUDA 安装文件，可以自定义一下需要安装的组件，如果之前已经安装过显卡了，则不需要再安装了。目录什么的无所谓，因为它只是临时目录，最后还是安装到了 C 盘。  
+![](http://ww1.sinaimg.cn/mw690/006CYpBYgy1fnah6sayhuj30gf0c4aca.jpg)  
+上面除了后面两个不勾其他的都选，下面的目录保持默认。  
+![](http://ww1.sinaimg.cn/mw690/006CYpBYgy1fnah7wchvmj30gj0c3go4.jpg)  
 然后要测试一下 CUDA8.0 是不是安装正确。打开一个 CMD 窗口。输入  
     ```
     nvcc -V
-    ```
+    ```  
     ![](http://ww1.sinaimg.cn/mw690/006CYpBYgy1fnae1w6df1j30ci06umx5.jpg)    
     会显示安装好了 CUDA8.0。然而这样还未成功，还要测试一下 CUDA samples 才行。
 
