@@ -30,7 +30,8 @@ discription:
     activate py3
     exit()
     deactivate py3
-    ```
+    ```  
+
     如果没有错误并正常显示说明安装好了。  
 
 3. 安装 CUDA8.0 和 cudnn6.0  
@@ -38,18 +39,18 @@ discription:
 ![](http://ww1.sinaimg.cn/mw690/006CYpBYgy1fnah6sayhuj30gf0c4aca.jpg)  
 上面除了后面两个不勾其他的都选，下面的目录保持默认。  
 ![](http://ww1.sinaimg.cn/mw690/006CYpBYgy1fnah7wchvmj30gj0c3go4.jpg)  
-然后要测试一下 CUDA8.0 是不是安装正确。打开一个 CMD 窗口。输入  
+然后要测试一下 CUDA8.0 是不是安装正确。打开一个 CMD 窗口。输入
     ```
     nvcc -V
-    ```  
-    ![](http://ww1.sinaimg.cn/mw690/006CYpBYgy1fnae1w6df1j30ci06umx5.jpg)    
-    会显示安装好了 CUDA8.0。然而这样还未成功，还要测试一下 CUDA samples 才行。
+    ```
+    ![](http://ww1.sinaimg.cn/mw690/006CYpBYgy1fnae1w6df1j30ci06umx5.jpg)  
+会显示安装好了 CUDA8.0。然而这样还未成功，还要测试一下 CUDA samples 才行。  
 
-    进入目录 C:\ProgramData\NVIDIA Corporation\CUDA Samples\v8.0 （注意该目录是隐藏的，需要电脑勾选查看隐藏的项目），双击打开 Samples_vs2015.sln 这个文件，等 VS2015 加载好。
+     进入目录 C:\ProgramData\NVIDIA Corporation\CUDA Samples\v8.0 （注意该目录是隐藏的，需要电脑勾选查看隐藏的项目），双击打开 Samples_vs2015.sln 这个文件，等 VS2015 加载好。
     注意选择 release 和 x64， 并在 1_Utilitis 上右键单击，点生成。
     如果显示生成5个成功，说明正确。然后打开 “C:\ProgramData\NVIDIA Corporation\CUDA Samples\v8.0\bin\win64\Release” 目录，发现有一些文件生成了。  
 
-    打开 CMD 窗口，进入到这个 Release 目录， 先运行 deviceQuery.exe 程序，就是在当前目录的 CMD 窗口输入 ` deviceQuery.exe` 并回车, 在结尾出现 result = PASS 说明正确。  
+    打开 CMD 窗口，进入到这个 Release 目录， 先运行 deviceQuery.exe 程序，就是在当前目录的 CMD 窗口输入 `deviceQuery.exe` 并回车, 在结尾出现 result = PASS 说明正确。  
     然后在当前目录输入 `bandwidthTest.exe` 并回车， 同样看看是否 result = PASS 。如果是的话说明完全正确。 
 
     尴尬的是我这里出现了 cudaErrorLaunchTimeout 错误，NVIDIA 管网上对这个错误的解释是 “This indicates that the device kernel took too long to execute. This can only occur if timeouts are enabled - see the device property kernelExecTimeoutEnabled for more information. The device cannot be used until cudaThreadExit() is called. All existing device memory allocations are invalid and must be reconstructed if the program is to continue using CUDA.” 。额，不太懂。。。。可能是系统限制了驱动的执行时间,我暂时没解决。
@@ -58,5 +59,5 @@ discription:
     接着安装 cudnn6.0。直接解压该文件压缩包，看到里面有三个文件。  
     ![](http://ww1.sinaimg.cn/mw690/006CYpBYgy1fnadjfmozoj30gu05ijre.jpg)  
     直接将这三个文件夹一起复制到 C:\ProgramData\NVIDIA GPU Computing Toolkit\v8.0 目录里。现在打开系统环境变量设置，确认 CUDA_PATH 和 CUDA_PATH_V8.0 已经存在。添加 C:\ProgramData\NVIDIA GPU Computing Toolkit\v8.0\bin 到 Path 里面,确定并退出。
-    ![](http://ww1.sinaimg.cn/thumbnail/006CYpBYgy1fnae1w6df1j30ci06umx5.jpg)
+    
 
