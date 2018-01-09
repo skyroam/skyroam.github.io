@@ -6,12 +6,12 @@ tags: 深度学习
 keywords: MXNet, Tensorflow
 discription:
 ---
-在Windows上安装深度学习框架并进行 GPU 加速确实废了我不小的功夫，所以在这里记录下来以便以后查看。
+在Windows上安装深度学习框架并进行 GPU 加速确实废了我不小的功夫，中文的一些垃圾博客根本就是天下文章一大抄，搞得别人晕头转向而且出现各种错误，所以在这里记录下来以便以后查看。
 
-我主要关注的深度学习框架是 Tensorflow, Pytorch, MNNet这三个。其中 Pytorch 在 Windows 上装不了，而对于 Tensorflow, Windows 上对 Python3.5 比较支持，而 MXNet 在 Windows 上只支持 Python2， 确实很烦，要同时兼容 Python2 和 Python3 才行。而且更新的 Tensorflow 不在支持 cudnn5.1， 所以这里注意要下载 cudnn6.0。  
+我主要关注的深度学习框架是 Tensorflow, Pytorch, MNNet这三个。其中 Pytorch 在 Windows 上装不了，而对于 Tensorflow, Windows 上对 Python3.5 比较支持，而 MXNet 在 Windows 上只支持 Python2， 确实很烦，要同时兼容 Python2 和 Python3 才行。而且更新的 Tensorflow 不在支持 cudnn5.1， 所以这里注意要下载 cudnn6.0。所以能在 Linux 上跑尽量用 Linux 好了，但是我不想装双系统。另外说一句，虚拟机的 Linux 没法用 GPU 加速。
 
 1. 首先装好对应的显卡驱动和 VS2015 community 版。   
-推荐先自己安装对应的显卡，因为 NVIDIA 有专门用于 Notebook 的显卡，安装该显卡后一般在控制面板有三个新程序。当然也可以不安装 exprience 那个软件。
+推荐先自己安装对应的显卡，因为 NVIDIA 有专门用于 Notebook 的显卡，注意和台式机的区别。安装该显卡后一般在控制面板有三个新程序。当然也可以不安装 exprience 那个软件。装 VS2015 的时候选择自定义，勾上编程语言里的 Visual C++ 那个选项，其他的默认就好了。
 
 2. 搭建 python2 和 python3 兼容环境  
 在这里我们通过 Anaconda 来安装 python, 下载 Anaconda2 并将其作为主环境。按照安装顺序，如果需要的话改变一下默认目录，并勾选两个选项。安装好之后打开CMD， 执行下面的命令创建一个 Python3 虚拟环境。  
@@ -49,7 +49,7 @@ discription:
     打开 CMD 窗口，进入到这个 Release 目录， 先运行 deviceQuery.exe 程序，就是在当前目录的 CMD 窗口输入 ` deviceQuery.exe` 并回车, 在结尾出现 result = PASS 说明正确。  
     然后在当前目录输入 `bandwidthTest.exe` 并回车， 同样看看是否 result = PASS 。如果是的话说明完全正确。 
 
-    尴尬的是我这里出现了 cudaErrorLaunchTimeout 错误，NVIDIA 管网上对这个错误的解释是“This indicates that the device kernel took too long to execute. This can only occur if timeouts are enabled - see the device property kernelExecTimeoutEnabled for more information. The device cannot be used until cudaThreadExit() is called. All existing device memory allocations are invalid and must be reconstructed if the program is to continue using CUDA.”。额，不太懂。。。。可能是系统限制了执行时间,我暂时没解决。
+    尴尬的是我这里出现了 cudaErrorLaunchTimeout 错误，NVIDIA 管网上对这个错误的解释是 “This indicates that the device kernel took too long to execute. This can only occur if timeouts are enabled - see the device property kernelExecTimeoutEnabled for more information. The device cannot be used until cudaThreadExit() is called. All existing device memory allocations are invalid and must be reconstructed if the program is to continue using CUDA.” 。额，不太懂。。。。可能是系统限制了驱动的执行时间,我暂时没解决。
     按照网上的一个做法可以修改注册表中驱动的一个属性值，详见[这里](https://stackoverflow.com/questions/17186638/modifying-registry-to-increase-gpu-timeout-windows-7)。  
 
     接着安装 cudnn6.0。直接解压该文件压缩包，看到里面有三个文件。  
