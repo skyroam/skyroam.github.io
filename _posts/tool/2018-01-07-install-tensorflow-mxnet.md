@@ -36,4 +36,6 @@ deactivate py3
 `
 nvcc -V  
 `  
-会显示安装好了 CUDA8.0。
+![](http://ww1.sinaimg.cn/large/006CYpBYgy1fnaa7m5oj1j30ci06umx5.jpg)  
+会显示安装好了 CUDA8.0。然而这样还未成功，还要测试一下 CUDA samples 才行。
+
