@@ -55,4 +55,5 @@ discription:
     接着安装 cudnn6.0。直接解压该文件压缩包，看到里面有三个文件。  
     ![](http://ww1.sinaimg.cn/mw690/006CYpBYgy1fnadjfmozoj30gu05ijre.jpg)  
     直接将这三个文件夹一起复制到 C:\ProgramData\NVIDIA GPU Computing Toolkit\v8.0 目录里。现在打开系统环境变量设置，确认 CUDA_PATH 和 CUDA_PATH_V8.0 已经存在。添加 C:\ProgramData\NVIDIA GPU Computing Toolkit\v8.0\bin 到 Path 里面,确定并退出。
+    ![](http://ww1.sinaimg.cn/thumbnail/006CYpBYgy1fnae1w6df1j30ci06umx5.jpg)
 
