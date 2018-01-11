@@ -95,7 +95,7 @@ discription:
         ```  
         结果出现如下错误。  
         ![](http://ww1.sinaimg.cn/mw690/006CYpBYgy1fnal4z4qszj30hs0afwen.jpg)  
-        上网查了一下原因，是因为 MXNet 目录里的 Build 文件中的 libmxnet.dll 缺少依赖。参见这个[解释] (https://github.com/apache/incubator-mxnet/issues/2601)  WindowsError: [Error 126]  
+        上网查了一下原因，是因为 MXNet 目录里的 Build 文件中的 libmxnet.dll 缺少依赖。参见这个[解释](https://github.com/apache/incubator-mxnet/issues/2601)  WindowsError: [Error 126]  
         This is usually because the dependent dll not find. So, you can:  
         1.use the 'Depends' tools open the libmxnet.dll, see which dll is missing.  
         2.make sure the u have the dll in your machine, and add the environment-path.
