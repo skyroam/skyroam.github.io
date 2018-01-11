@@ -19,7 +19,8 @@ discription:
 
     `dir` : Windows 里查看目录文件
 
-    `ls` : Linux 里查看目录文件
+    `ls` : Linux 里查看目录文件  
+    `Shift + 鼠标右键` : Windows 在当前目录打开 CMD 窗口，最新的是打开 Powershell 窗口
     
 2. 在 Markdown 里调整图片的显示大小  
     * 嵌入HTML代码  
