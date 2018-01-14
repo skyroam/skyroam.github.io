@@ -6,7 +6,7 @@ tags: Pytorch
 kewords: Pytorch
 description:
 ---
-虽然有的博客讲了怎么在 Windows 上安装 Pytorch 的，但是官方并未说 Pytorch 会支持 Windows ， 可以会出现各种问题，所以我还是在 Linux 上装一下吧。由于我用的是虚拟机，所以安装的是 CPU 版本的。
+虽然有的博客讲了怎么在 Windows 上安装 Pytorch 的，但是官方并未说 Pytorch 会支持 Windows ， 可能会出现各种问题，所以我还是在 Linux 上装一下吧。由于我用的是虚拟机，所以安装的是 CPU 版本的。
 
 1. 安装 Anaconda。  
 首先到 Anaconda 官网上下载最新版的 Anaconda 3.6, Pytorch 支持 3.6 版本。下载后一般是在 Downloads 文件夹内。打开终端，运行
