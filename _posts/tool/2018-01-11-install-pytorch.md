@@ -4,7 +4,7 @@ title: 在 Ubantu 16.04 里安装 Pytorch
 category: 工具
 tags: Pytorch
 kewords: Pytorch
-discription:
+description:
 ---
 虽然有的博客讲了怎么在 Windows 上安装 Pytorch 的，但是官方并未说 Pytorch 会支持 Windows ， 可以会出现各种问题，所以我还是在 Linux 上装一下吧。由于我用的是虚拟机，所以安装的是 CPU 版本的。
 
@@ -25,7 +25,11 @@ discription:
 2. 安装pytorch  
 打开 Pytorch 官网，选择对应的安装选项  
 ![](http://ww1.sinaimg.cn/mw690/006CYpBYgy1fnfvwujnhmj30t60bcdgw.jpg)  
-在终端运行对应的安装命令，等待安装完成，十分方便。这里会有个问题就是有的时候网络不好会出现 conda http error， 我之前尝试了几次都没有成功，之后早起安装成功了，成功显示如下。  
+在终端运行对应的安装命令，等待安装完成，十分方便。
+    ```bash
+    conda install pytorch-cpu torchvision -c pytorch
+    ```
+    这里会有个问题就是有的时候网络不好会出现 conda http error， 我之前尝试了几次都没有成功，之后早起安装成功了，成功显示如下。  
 ![](http://ww1.sinaimg.cn/mw690/006CYpBYgy1fnfw1l9u4pj30kd09w75p.jpg)  
 看网上说，安装 Pytorch 需要翻墙，我这里可以翻墙，所以有时安装不了可能是无法翻墙的缘故，如果不行的添加清华的源看看，打开终端，执行下面的命令。
     ```shell
