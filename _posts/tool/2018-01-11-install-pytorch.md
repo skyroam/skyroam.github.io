@@ -52,5 +52,5 @@ description:
         '\ntensor to array:', tensor2array, # [[0 1 2], [3 4 5]]
     )
     ```  
-    可以看到结果正确，这里的例子取自[莫烦 Python](https://morvanzhou.github.io/tutorials/machine-learning/torch/2-01-torch-numpy/)。可以看到结果正确，至此安装成功。
+    可以看到结果正确，这里的例子取自[莫烦 Python](https://morvanzhou.github.io/tutorials/machine-learning/torch/2-01-torch-numpy/)，至此安装成功。  
     ![](http://ww1.sinaimg.cn/mw690/006CYpBYgy1fnfwuaw1dxj30ke0620t1.jpg)
