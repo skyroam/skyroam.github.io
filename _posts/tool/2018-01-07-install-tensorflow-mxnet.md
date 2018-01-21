@@ -52,7 +52,7 @@ discription:
     ![](http://ww1.sinaimg.cn/mw690/006CYpBYgy1fnahutg7uyj30vc0983z4.jpg)  
     如果显示生成5个成功，说明正确。然后打开 C:\ProgramData\NVIDIA Corporation\CUDA Samples\v8.0\bin\win64\Release 目录，发现有一些文件生成了。  
 
-    打开 CMD 窗口，进入到这个 Release 目录， 先运行 deviceQuery.exe 程序，就是在当前目录的 CMD 窗口输入 `deviceQuery.exe` 并回车, 在结尾出现 result = PASS 说明正确。  
+    打开 CMD 窗口，进入到这个 Release 目录， 先运行 `deviceQuery.exe` 程序，就是在当前目录的 CMD 窗口输入 `deviceQuery.exe` 并回车, 在结尾出现 result = PASS 说明正确。  
     然后在当前目录输入 `bandwidthTest.exe` 并回车， 同样看看是否 result = PASS 。如果是的话说明完全正确。 
 
     尴尬的是我这里出现了 cudaErrorLaunchTimeout 错误，NVIDIA 管网上对这个错误的解释是 “This indicates that the device kernel took too long to execute. This can only occur if timeouts are enabled - see the device property kernelExecTimeoutEnabled for more information. The device cannot be used until cudaThreadExit() is called. All existing device memory allocations are invalid and must be reconstructed if the program is to continue using CUDA.” 。额，不太懂。。。。可能是系统限制了驱动的执行时间,我暂时没解决。
@@ -150,4 +150,4 @@ Tensorflow 的安装轻松很多。首先要确定一下的东西：
     pip install keras
    ```
    如果还想配置其他 IDE 自己配就好了，比如 Pycharm 或者 Spyder 什么的。
-6. 至此安装成功，很6。
+6. 至此安装成功。
