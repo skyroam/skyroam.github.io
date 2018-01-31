@@ -34,10 +34,10 @@ description:
 下好后 CMake 一路安装就行，Caffe 依赖包后边再用。
 ### 配置 Caffe
 官网指示：
-```text
+```
 The fastest method to get started with caffe on Windows is by executing the following commands in a cmd prompt (we use C:\Projects as a root folder for the remainder of the instructions):
 ```
-```DOS
+```bash
 C:\Projects> git clone https://github.com/BVLC/caffe.git
 C:\Projects> cd caffe
 C:\Projects\caffe> git checkout windows
@@ -48,7 +48,7 @@ C:\Projects\caffe> scripts\build_win.cmd
 ![](http://ww1.sinaimg.cn/mw690/006CYpBYly1fnzzofg0d0j30fk071mx4.jpg)
 2. 接着根据自己的情况修改 caffe\scripts\bulid_win.cmd 里代码，使用文件编辑器（如 Sublime ） 打开这个文件（不要双击）。
     1. 修改 23-26 行
-        ```DOS
+        ```bash
         :: Set python 2.7 with conda as the default python
         if !PYTHON_VERSION! EQU 2 (
             set CONDA_ROOT=C:\Miniconda-x64
@@ -57,7 +57,7 @@ C:\Projects\caffe> scripts\build_win.cmd
          这里的 *C:\Miniconda-x64* 路径要改成自己的 Anaconda2 安装路径，比如说我的就改为 *D:\Anaconda2*
     2. 修改 69-100 行  
         ::为注释符，后面说明了相关的设置。
-        ```DOS
+        ```bash
         ) else (
             :: Change the settings here to match your setup
             :: Change MSVC_VERSION to 12 to use VS 2013
@@ -106,7 +106,7 @@ C:\Projects\caffe> scripts\build_win.cmd
 ## 测试
 1. 下载 MNIST 数据集 [https://pan.baidu.com/s/1o7YrhKe](​https://pan.baidu.com/s/1o7YrhKe)，解压缩后将 mnist-test-leveldb 与 mnist-train-leveldb 文件夹放到 \examples\mnist 下。
 2. 修改 lenet_train_test.prototxt 文件：
-    ```DOS
+    ```bash
     //需要修改四处地方，如下红色部分标注  
     name: "LeNet"  
     layer {  
@@ -145,7 +145,7 @@ C:\Projects\caffe> scripts\build_win.cmd
     }  
     ```
 3. 修改 lenet_solver.prototxt 文件：
-    ```DOS
+    ```bash
     net: "....省略/examples/mnist/lenet_train_test.prototxt"  //改为绝对路径  
 
     snapshot_prefix: "....省略/examples/mnist/lenet" //改为绝对路径  
@@ -153,7 +153,7 @@ C:\Projects\caffe> scripts\build_win.cmd
     solver_mode: GPU //选择GPU模式
     ```
 4. 编写批处理文件 run.bat 内容如下：
-    ```DOS
+    ```bash
     D:\Caffe\caffe\build\tools\Release\caffe.exe train --solver=D:\Caffe\caffe\examples\mnist\lenet_solver.prototxt
     Pause 
     ```
