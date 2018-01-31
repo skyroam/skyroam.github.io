@@ -34,7 +34,7 @@ description:
 下好后 CMake 一路安装就行，Caffe 依赖包后边再用。
 ### 配置 Caffe
 官网指示：
-```
+```text
 The fastest method to get started with caffe on Windows is by executing the following commands in a cmd prompt (we use C:\Projects as a root folder for the remainder of the instructions):
 ```
 ```bash
@@ -44,7 +44,7 @@ C:\Projects\caffe> git checkout windows
 :: Edit any of the options inside build_win.cmd to suit your needs
 C:\Projects\caffe> scripts\build_win.cmd
 ```
-1. 首先打开 CMD，切换到打算安装 Caffe 的路径，然后按照官网上的指示，执行 Git 等一系列命令，先执行前三步。注意如果你的 Windows CMD 无法执行 git 命令，我建议下载 [git for windows](http://gitforwindows.org/) 工具，然后根据这个[教程](https://jingyan.baidu.com/article/9f7e7ec0b17cac6f2815548d.html)安装。然后根据你的 Windows CMD 中能不能使用 git 的配置选择直接在 Windows CMD 中执行命令还是在 Git CMD 中执行。我的是 Git CMD。
+1. 首先打开 CMD，切换到打算安装 Caffe 的路径，然后按照官网上的指示，执行 Git 等一系列命令，先执行前三步。注意如果你的 Windows CMD 无法执行 git 命令，我建议下载 [git for windows](http://gitforwindows.org/) 工具，然后根据这个[教程](https://jingyan.baidu.com/article/9f7e7ec0b17cac6f2815548d.html)安装。然后根据你的 Windows CMD 中能不能使用 git 的配置选择直接在 Windows CMD 中执行命令还是在 Git CMD 中执行。我的是 Git CMD。  
 ![](http://ww1.sinaimg.cn/mw690/006CYpBYly1fnzzofg0d0j30fk071mx4.jpg)
 2. 接着根据自己的情况修改 caffe\scripts\bulid_win.cmd 里代码，使用文件编辑器（如 Sublime ） 打开这个文件（不要双击）。
     1. 修改 23-26 行
@@ -94,7 +94,7 @@ C:\Projects\caffe> scripts\build_win.cmd
         在这里主要是设置 *MSVC_VERSION=14*，*WITH_NINJA=0*，*CPU_ONLY=0*，*BUILD_MATLAB=1*，分别表示使用 VS 2015，不用 Ninja，使用 GPU，使用 Matlab 接口，保存。
 3. 在 CMD 中运行最后一句命令。  
 `scripts\build_win.cmd`  
-![](http://ww1.sinaimg.cn/mw690/006CYpBYly1fo00ergsd4j30qs0ctdg1.jpg)  
+![](http://ww1.sinaimg.cn/mw690/006CYpBYly1fo02j6sqouj30nn0clt8y.jpg)  
 当你执行最后一句命令的时候，它会下载一个依赖包，并且自动在 C 盘用户文件夹上生成 .caffe 文件夹，下载的依赖包就放到里面。但是这里经常下载不了而导致出现错误，就像上面一样。所以推荐自己下载然后放在指定位置。把你下载的Caffe 依赖包压缩文件放到 C 盘用户文件夹下生成 .caffe 文件夹，如我的位置是在 C:\Users\wangy\\.caffe\dependencies\download（这个位置可以在运行这个命令的界面中找到，将之前下载的文件放在这个位置，再重新运行此命令即可）。   
 建议先运行 build_win.cmd 命令，如果速度太慢再把它关闭，这样就不需要自己创建对应的文件夹，只需把压缩文件拷贝就行。    
 再运行一次 build_win.cmd 命令，这次不会有什么问题，等待一小段时间 CMake 就把 VS 2015 的项目给创建出来了。  
@@ -147,13 +147,11 @@ C:\Projects\caffe> scripts\build_win.cmd
 3. 修改 lenet_solver.prototxt 文件：
     ```bash
     net: "....省略/examples/mnist/lenet_train_test.prototxt"  //改为绝对路径  
-
     snapshot_prefix: "....省略/examples/mnist/lenet" //改为绝对路径  
-
     solver_mode: GPU //选择GPU模式
     ```
 4. 编写批处理文件 run.bat 内容如下：
-    ```bash
+    ```
     D:\Caffe\caffe\build\tools\Release\caffe.exe train --solver=D:\Caffe\caffe\examples\mnist\lenet_solver.prototxt
     Pause 
     ```
