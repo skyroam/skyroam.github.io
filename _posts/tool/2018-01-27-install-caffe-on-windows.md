@@ -31,18 +31,20 @@ description:
 ### 下载 CMake 和 Caffe 的依赖包。
 * [CMake](https://cmake.org/download/)
 * [Caffe 依赖](https://github.com/willyd/caffe-builder/releases/ )
+下好后 CMake 一路安装就行，Caffe 依赖包后边再用。
 ### 配置 Caffe
 官网指示：
-```
+```text
 The fastest method to get started with caffe on Windows is by executing the following commands in a cmd prompt (we use C:\Projects as a root folder for the remainder of the instructions):
-
+```
+```DOS
 C:\Projects> git clone https://github.com/BVLC/caffe.git
 C:\Projects> cd caffe
 C:\Projects\caffe> git checkout windows
 :: Edit any of the options inside build_win.cmd to suit your needs
 C:\Projects\caffe> scripts\build_win.cmd
 ```
-1. 首先打开 CMD，切换到打算安装 Caffe 的路径，然后按照官网上的指示，执行 Git 等一系列命令，先执行前三步。  
+1. 首先打开 CMD，切换到打算安装 Caffe 的路径，然后按照官网上的指示，执行 Git 等一系列命令，先执行前三步。注意如果你的 Windows CMD 无法执行 git 命令，我建议下载 [git for windows](http://gitforwindows.org/) 工具，然后根据这个[教程](https://jingyan.baidu.com/article/9f7e7ec0b17cac6f2815548d.html)安装。然后根据你的 Windows CMD 中能不能使用 git 的配置选择直接在 Windows CMD 中执行命令还是在 Git CMD 中执行。我的是 Git CMD。
 ![](http://ww1.sinaimg.cn/mw690/006CYpBYly1fnzzofg0d0j30fk071mx4.jpg)
 2. 接着根据自己的情况修改 caffe\scripts\bulid_win.cmd 里代码，使用文件编辑器（如 Sublime ） 打开这个文件（不要双击）。
     1. 修改 23-26 行
