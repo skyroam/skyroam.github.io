@@ -97,7 +97,8 @@ C:\Projects\caffe> scripts\build_win.cmd
 ![](http://ww1.sinaimg.cn/mw690/006CYpBYly1fo02j6sqouj30nn0clt8y.jpg)  
 当你执行最后一句命令的时候，它会下载一个依赖包，并且自动在 C 盘用户文件夹上生成 .caffe 文件夹，下载的依赖包就放到里面。但是这里经常下载不了而导致出现错误，就像上面一样。所以推荐自己下载然后放在指定位置。把你下载的Caffe 依赖包压缩文件放到 C 盘用户文件夹下生成 .caffe 文件夹，如我的位置是在 C:\Users\wangy\\.caffe\dependencies\download（这个位置可以在运行这个命令的界面中找到，将之前下载的文件放在这个位置，再重新运行此命令即可）。   
 建议先运行 build_win.cmd 命令，如果速度太慢再把它关闭，这样就不需要自己创建对应的文件夹，只需把压缩文件拷贝就行。    
-再运行一次 build_win.cmd 命令，这次不会有什么问题，等待一小段时间 CMake 就把 VS 2015 的项目给创建出来了。  
+再运行一次 build_win.cmd 命令，这次不会有什么问题，等待一小段时间 CMake 就把 VS 2015 的项目给创建出来了。这里如果发现窗口出现经典的乱码，可以事先设置一下 Git Bash 的配置，比如将编码设置成下图所示，我这里没设置但好像也没有什么问题。  
+![](http://ww1.sinaimg.cn/mw690/006CYpBYgy1fo35la1clpj30je0b1t96.jpg)  
 ![](http://ww1.sinaimg.cn/mw690/006CYpBYly1fo00xfnsbgj30np0clweu.jpg)
 4. 生成项目  
 在 caffe\build 文件夹下就生成了 caffe.sln，用 VS 2015 将其打开，并在release x64 或者 Debug x64 生成 ALL_BUILD 文件即可。  
@@ -107,7 +108,7 @@ C:\Projects\caffe> scripts\build_win.cmd
 1. 下载 MNIST 数据集 [https://pan.baidu.com/s/1o7YrhKe](​https://pan.baidu.com/s/1o7YrhKe)，解压缩后将 mnist-test-leveldb 与 mnist-train-leveldb 文件夹放到 \examples\mnist 下。
 2. 修改 lenet_train_test.prototxt 文件：
     ```bash
-    //需要修改四处地方，如下红色部分标注  
+    //需要修改四处地方，如下//部分标注  
     name: "LeNet"  
     layer {  
     name: "mnist"  
