@@ -11,7 +11,9 @@ discription:
 1. 一些快捷键  
     `Windos 键 + Print Screen 键` 全屏截图,会把截图存到电脑图片的屏幕截图里
 
-    `Alt 键 + Print Screen 键` 窗口截图,会把截图存到剪贴板，然后可以粘贴
+    `Alt 键 + Print Screen 键` 窗口截图,会把截图存到剪贴板，然后可以粘贴  
+
+    `Windows 键 + shift 键 + s` Win10 创意版最新截图，保留到粘贴板
 
     `python -v` : 显示一些信息，比如导入某个包
 
