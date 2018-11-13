@@ -25,12 +25,12 @@ favicon: http://ww1.sinaimg.cn/large/006CYpBYgy1fn3ipbc0oog303k03kaa0.gif
 
 # disqus config
 disqus:
-  shortname: wyx-zh
+  shortname: wyx
 
 # google analytics config
 ga:
   id: UA-88179133-2
-  url: skyroam.github.io
+  url: wyx.life
 
 # Build settings
 permalink: /:year/:month/:day/:title.html
