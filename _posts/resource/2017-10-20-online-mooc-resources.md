@@ -16,7 +16,7 @@ description: some words
 4. [Mooc学院](https://mooc.guokr.com/)  
     这个是国内比较好的 Mooc 网站了，它和其他很多 Mooc 网站都有合作，所以在想学什么的时候可以先在这里搜索一下，然后就可以跳到其他网站了。
 5. [学堂在线](http://www.xuetangx.com/)  
-    这个是清华大学的 Mooc , 有很多清华大学的课程的简化版。邓俊辉老师的数据结构和向勇老师的操作系统备受好评，可以学习一个。
+    这个是清华大学的 Mooc , 有很多清华大学的课程的简化版。邓俊辉老师的数据结构和向勇老师的操作系统备受好评，可以学习一下。
 6. [Github](https://github.com/skyroam/awesome-courses)  
     不得不说 Github 上有不少好的资源，比如上面就是一个国外很多课程的资料合集。  
 
