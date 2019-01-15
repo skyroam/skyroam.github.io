@@ -2,8 +2,8 @@
 layout: post
 title: 关于生死
 category: 感悟
-tag: Sentiment
-keywords: life death
+tags: 生命
+keywords: 生死
 description: 
 ---
 最近又听到了一个让人悲伤的消息，同济大学的研究生跳楼自杀了，原因是导师的残酷的剥削和压榨。这里先暂时不谈老师，来谈谈自己对生或者死的看法吧。
