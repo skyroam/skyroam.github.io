@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 共勉
+title: 致我的队友
 category: 随笔
 tags: Poem
 keywords: Poem,Teammate

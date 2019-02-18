@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 逆反心理
+title: 学校的光
 category: 随笔
 tags: School
 keywords: Poem,School
