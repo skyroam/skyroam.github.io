@@ -1,7 +1,5 @@
 ### 我的博客
 
-地址：[http:/wyx.life](http://wyx.life)
-
 ### 安装说明
 
 1. fork库到自己的github
